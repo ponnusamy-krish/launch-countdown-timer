@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+
+}
+
+body {
+  overflow: hidden;
+  font-family: "Red Hat Text", sans-serif;
+  transition: all 1s ease;
+
+  
+}
+
+.background {
+  background-color: #201e2b;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.stars {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+ 
+}
+
+.title {
+  color: white;
+  font-weight: lighter;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+.main {
+  height: 30vh;
+  width: 60vw;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+i {
+  color: hsl(237, 18%, 59%);
+  cursor: pointer;
+  z-index: 99;
+  transition: all 1s ease;
+}
+i:hover {
+  color: hsl(345, 95%, 68%);
+}
+.icongrp {
+  width: 10vw;
+  display: flex;
+  justify-content: space-around;
+  font-size: larger;
+}
+
+.shape {
+  height: 100%;
+  width: 20%;
+  background-color: hsl(236, 21%, 26%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  color: hsl(345, 95%, 68%);
+  overflow: hidden;
+}
+
+.text {
+  width: 80vw;
+
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -80px;
+  background-color: aquamarine;
+  letter-spacing: 5px;
+  font-size: smaller;
+}
+
+.hills {
+  position: absolute;
+  top: 80vh;
+  z-index: 1;
+  width: 100vw;
+}
+.hours::after {
+  content: "HOURS";
+  position: absolute;
+  color: hsl(237, 18%, 59%);
+  font-size: 15px;
+  margin-top: 40vh;
+  letter-spacing: 10px;
+}
+
+.days::after {
+  content: "DAYS";
+  position: absolute;
+  color: hsl(237, 18%, 59%);
+  font-size: 15px;
+  margin-top: 40vh;
+  letter-spacing: 10px;
+}
+
+.minutes::after {
+  content: "MINUTES";
+  position: absolute;
+  color: hsl(237, 18%, 59%);
+  font-size: 15px;
+  margin-top: 40vh;
+  letter-spacing: 10px;
+}
+
+.seconds::after {
+  content: "SECONDS";
+  position: absolute;
+  color: hsl(237, 18%, 59%);
+  font-size: 15px;
+  margin-top: 40vh;
+  letter-spacing: 10px;
+}
+
+#sec {
+  margin-top: 10px;
+
+  transition: all 1s ease;
+  animation: hello 1s ease 1s infinite;
+}
+
+@keyframes hello {
+  0% {
+    transform: translateY(-140%);
+  }
+  100% {
+    transform: translateY(140%);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+ 
+  .title {
+    color: white;
+    font-weight: lighter;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 5px;
+  }
+  .main {
+    height: 15vh;
+    width: 90vw;
+  }
+
+  .icongrp {
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    font-size: larger;
+  }
+
+  .shape {
+    height: 100%;
+    width: 20%;
+    background-color: hsl(236, 21%, 26%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 40px;
+  }
+
+  .hours::after {
+    font-size: 6px;
+    margin-top: 20vh;
+    margin-left: 5px;
+    letter-spacing: 5px;
+  }
+
+  .days::after {
+    font-size: 6px;
+    margin-top: 20vh;
+    margin-left: 5px;
+    letter-spacing: 5px;
+  }
+
+  .minutes::after {
+    font-size: 6px;
+    margin-top: 20vh;
+    margin-left: 5px;
+    letter-spacing: 5px;
+  }
+
+  .seconds::after {
+    font-size: 6px;
+    margin-top: 20vh;
+    margin-left: 5px;
+    letter-spacing: 5px;
+  }
+
+  .hills {
+    position: absolute;
+    top: 70vh;
+    z-index: 1;
+    width: 200vw;
+    height: 30vh;
+  }
+
+}
